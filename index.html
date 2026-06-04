@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFD54F" />
+  <meta name="description" content="LumoLingo: Play, Speak, Listen, and Grow. An intelligibility-oriented playful English app for young learners." />
+  <title>LumoLingo | Play, Speak, Listen, and Grow</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <noscript>
+    <div class="noscript">LumoLingo needs JavaScript enabled because the learning games, buttons, progress, and dashboards are interactive.</div>
+  </noscript>
+
+  <div id="appShell" class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <button class="brand-card nav-btn" data-route="home" aria-label="Open Home World">
+        <span class="lumo-mini">✦</span>
+        <span>
+          <strong>LumoLingo</strong>
+          <small>Play, Speak, Listen, and Grow</small>
+        </span>
+      </button>
+
+      <div class="profile-card">
+        <div class="avatar" id="sideAvatar">😊</div>
+        <div>
+          <strong id="sideLearnerName">Maya</strong>
+          <small id="sideLearnerLevel">Star Explorer</small>
+        </div>
+      </div>
+
+      <nav class="nav-stack">
+        <button class="nav-btn active" data-route="home">🏡 <span>Home World</span></button>
+        <button class="nav-btn" data-route="sound">🏝️ <span>Sound Island</span></button>
+        <button class="nav-btn" data-route="word">🌳 <span>Word Forest</span></button>
+        <button class="nav-btn" data-route="story">📖 <span>Story Lake</span></button>
+        <button class="nav-btn" data-route="song">🎵 <span>Song Mountain</span></button>
+        <button class="nav-btn" data-route="speak">🎙️ <span>Speak Garden</span></button>
+        <button class="nav-btn" data-route="progress">⭐ <span>Progress Stars</span></button>
+        <button class="nav-btn" data-route="parent">💛 <span>Parent Corner</span></button>
+        <button class="nav-btn" data-route="teacher">📊 <span>Teacher Studio</span></button>
+        <button class="nav-btn" data-route="admin">🔐 <span>Admin Studio</span></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="soft-btn full" id="quickListenBtn">🔊 Listen to Lumo</button>
+        <button class="soft-btn full" id="installBtn" hidden>⬇️ Install App</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Intelligibility-Oriented Playful English App for Young Learners</p>
+          <h1 id="pageTitle">Home World</h1>
+        </div>
+        <div class="top-stats">
+          <div class="stat-pill"><span>⭐</span><strong id="statStars">125</strong><small>Stars</small></div>
+          <div class="stat-pill"><span>🛡️</span><strong id="statBadges">5</strong><small>Badges</small></div>
+          <div class="stat-pill"><span>🔥</span><strong id="statStreak">7</strong><small>Day streak</small></div>
+        </div>
+      </header>
+
+      <section class="hero-strip" id="heroStrip">
+        <div class="lumo-character" aria-hidden="true">
+          <div class="lumo-head">✨</div>
+          <div class="lumo-face">●‿●</div>
+        </div>
+        <div>
+          <h2 id="lumoMessageTitle">Welcome back, Star Explorer!</h2>
+          <p id="lumoMessageText">Choose a world and complete a short mission. Every button and activity saves your progress.</p>
+        </div>
+        <button class="primary-btn" id="startMissionBtn">Start Today’s Mission</button>
+      </section>
+
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal-backdrop" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h2 id="modalTitle">Modal</h2>
+        <button class="icon-btn" id="modalCloseBtn" aria-label="Close">✕</button>
+      </div>
+      <div id="modalContent" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app-core.js" defer></script>
+</body>
+</html>

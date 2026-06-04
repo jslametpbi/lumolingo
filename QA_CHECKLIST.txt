@@ -1,0 +1,47 @@
+LumoLingo Working App QA Checklist
+
+1. Open index.html locally or through GitHub Pages.
+2. Confirm Home World opens and all menu buttons route correctly.
+3. Open Sound Island:
+   - Listen button speaks.
+   - Picture cards select.
+   - Check Answer gives feedback and stars.
+   - Record Voice opens recording modal.
+   - Next Sound changes task.
+4. Open Word Forest:
+   - Word listen button works.
+   - Picture selection works.
+   - Check and Next Word work.
+5. Open Story Lake:
+   - Read Aloud works.
+   - Choice buttons give feedback and stars.
+   - Next Story works.
+6. Open Song Mountain:
+   - Sing with Lumo reads lyrics.
+   - Beat tap counts to 8 and awards stars.
+   - Next Song works.
+7. Open Speak Garden:
+   - Model voice works.
+   - Microphone modal opens.
+   - Save Practice Attempt works even without microphone.
+   - Next Sentence works.
+8. Open Progress Stars:
+   - Stars, badges, and activity evidence appear.
+   - Download Report works.
+9. Open Parent Corner:
+   - Co-play cards toggle done/not done.
+   - Parent notes save.
+   - Download Plan works.
+10. Open Teacher Studio:
+   - Assign Activity creates active assignment.
+   - Export CSV downloads.
+   - Recordings appear after saving audio.
+11. Open Admin Studio:
+   - PIN unlock works.
+   - Settings save.
+   - Add Word Forest card works.
+   - Add Speak Garden sentence works.
+   - Export/Import backup works.
+   - Reset Demo works.
+12. Refresh the browser:
+   - Progress and settings remain saved.
