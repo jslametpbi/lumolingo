@@ -1,0 +1,44 @@
+LumoLingo QA Checklist
+======================
+
+Static package checked:
+- index.html present
+- styles.css present
+- app-core.js present
+- manifest.json present
+- sw.js present
+- assets folder present
+- icon assets present
+- design board reference included
+
+Integrated app areas:
+- Entrance / role switch
+- Child dashboard
+- Sound Island
+- Word Forest
+- Story Lake
+- Song Mountain
+- Speak Garden
+- Progress Stars
+- Parent Corner
+- Teacher Studio
+- Admin Studio
+
+Core working functions:
+- Role selection and app entry
+- Navigation routing
+- Stars and completed mission storage
+- Text-to-speech buttons
+- Speech recognition/fallback recording
+- Parent task creation and completion
+- Teacher assignment modal
+- Add learner
+- Export CSV
+- Download report
+- Save settings
+- Add content
+- Export JSON backup
+- Import JSON backup
+- Reset demo
+- Print support
+- PWA offline service worker
